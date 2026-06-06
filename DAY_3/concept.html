@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1,p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: aqua;
+        } */
+
+        /* h1+p {
+            color: aqua;
+        } */
+
+        h1~p {
+            color: red;
+        }
+        li:nth-child(4){
+            color: cornflowerblue;
+        }
+        li:nth-child(odd){
+            color: rgb(20, 100, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>first heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ut officiis nostrum aut eius quisquam,
+        voluptatem architecto dolorem ratione! Fugit!</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+        <li>apple</li>
+        <li id="c">grapes</li>
+        <li id="b">banana</li>
+        <li id="a">watermelon</li>
+        <li id="c">grapes</li>
+        <li id="b">banana</li>
+        <li id="a">watermelon</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <td>sno</td>
+                <td>name</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+
+</html>

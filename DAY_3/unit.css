@@ -1,0 +1,39 @@
+/* #d{
+    list-style-type: disc;
+    font-size: 10px;
+}
+
+#c{
+    list-style-type: circle;
+    font-size: 1cm;
+
+}
+#b{
+    list-style-type: square;
+    font-size: 10mm;
+}
+#a{
+    list-style-type: none;
+}
+.a{
+    list-style-type: upper-roman;
+}
+*{
+    background-color: brown;
+}
+
+p{
+    font-size: 1pc;
+}
+.a{
+    font-size: 50%;
+}
+.b{
+    font-size: 10em;
+}
+.c{
+    font-size: 10rem;
+}
+.d{
+    font-size: 10vw;
+} */
