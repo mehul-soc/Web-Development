@@ -1,0 +1,43 @@
+.item {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+
+}
+
+.item1:hover {
+    transform: translateX(400px);
+}
+
+.item1 {
+    /* transform: translateX(400px); */
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    /* transition-delay: 2s; */
+}
+
+.item2:hover {
+    transform: translateY(100px);
+}
+
+.item3:hover {
+    transform: scale(1.5);
+}
+
+.item4:hover {
+    transform: rotate(40deg);
+}
+
+.item5:hover {
+    transform: translate(100px) scale(1.5) rotate(40deg);
+}

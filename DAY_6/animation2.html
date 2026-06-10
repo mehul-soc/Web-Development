@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        .child {
+            border: 10px solid black;
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            /* border-bottom-color: transparent; */
+            animation: movebox 1.5s ease-in-out infinite;
+
+        }
+
+        @keyframes movebox {
+            0% {
+                transform: translateX(0)
+            }
+
+            50% {
+                transform: translateX(-200px);
+            }
+
+            100% {
+                transform: translateX(200px);
+            }
+        }
+
+
+
+        .parent {
+            /* border: 10px solid gray; */
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 1000%; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+</body>
+
+</html>

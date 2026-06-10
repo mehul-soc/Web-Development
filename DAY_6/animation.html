@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 10px solid;
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            /* border-bottom-color: transparent; */
+            animation: movebox 1.5s ease-in-out infinite;
+            background: linear-gradient(red, orange, yellow, green, blue, indigo, violet)
+        }
+
+        @keyframes movebox {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        .container {
+            height: 50vh;
+            width: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
