@@ -1,0 +1,90 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "nav main end end"
+        "nav side-content main-content main-content"
+        "nav side-content main-content main-content"
+        "footer footer footer footer";
+    gap: 10px;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.item1 {
+    grid-area: nav;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 550px;
+    width: 170px;
+
+
+}
+
+.item2 {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    width: 500px;
+    height: 140px;
+
+
+}
+
+.item3 {
+    grid-area: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 150px;
+    height: 140px;
+
+}
+
+.item4 {
+    grid-area: side-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    height: 400px;
+    width: 500px;
+
+}
+
+.item5 {
+    grid-area: main-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    height: 400px;
+    width: 150px;
+}
+
+.item6 {
+    grid-area: footer;
+    background-color: chocolate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+    height: 100px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
