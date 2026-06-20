@@ -1,0 +1,10 @@
+5;
+// let diff = 100-5;
+// let mul = 55 * 0;
+// let div = 44/2;
+// let mod = 33%2;
+// console.log(sum);
+// console.log(diff);
+// console.log(mul);
+// console.log(div);
+// console.log(mod);
