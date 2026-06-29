@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        .taskname{
+            list-style:none;
+        }
+
+    </style> -->
+</head>
+
+<body>
+    <label for=""> task</label>
+    <input type="text" name="" id="inp" placeholder="add task">
+    <button class="task">add</button>
+    <ul class="tasklist">
+        <!-- <li class="taskname"> dance <button>up</button><button>down</button><button>Del</button></li> -->
+
+
+    </ul>
+
+
+
+
+
+    <script>
+        const task = document.querySelector('.task')
+        console.log(task)
+        const inp = document.querySelector('#inp')
+        console.log(inp)
+        const tasklist = document.querySelector('.tasklist')
+
+        task.addEventListener('click', () => {
+            console.log(inp.value)
+            let todo = inp.value;
+            let li = document.createElement('li');
+            console.log(li.innerHTML)
+            li.classList.add('taskname')
+            li.innerHTML = `${todo}
+            <span>
+                <button>Up</button>
+                <button>Down</button>
+                <button>Del</button>
+            </span>`
+            tasklist.appendChild(li);
+            li.style.listStyle = 'none';
+            
+            inp.value = "";
+
+
+
+
+
+        })
+
+    </script>
+</body>
+
+</html>
