@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Guys</h1>
+    </div>
+    <div id="box">
+        <p>whatss up.........</p>
+    </div>
+
+    <ul style="list-style: none;">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+    <script>
+        // const cont = document.getElementsByClassName('container');
+        // console.log(cont)
+        // const tag = document.getElementsByTagName('h1');
+        // console.log(tag);
+
+        // const ids = document.getElementById('box')
+        // console.log(ids);
+
+
+        const cont = document.querySelector('.container')
+        console.log(cont)
+
+        const ids = document.querySelector('#box')
+        console.log(ids);
+        ids.style.color = 'green'
+
+        const tag = document.querySelector('h1');
+        console.log(tag);
+
+        const uls = document.querySelectorAll('li')
+        console.log(uls)
+
+        uls.forEach(element => {
+            console.log(element)
+            element.style.color = 'red'
+            element.style.backgroundColor = 'blue'
+            element.style.fontSize = '50px'
+        });
+
+        
+    </script>
+</body>
+</html>

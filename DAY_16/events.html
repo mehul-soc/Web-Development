@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <button>submit</button>
+
+
+    <script>
+        const btn = document.querySelector('button')
+        btn.onclick= (() =>{
+            console.log("Button clicked")
+        })
+        btn.ondblclick = () =>{
+            console.log("Button double clicked")
+        }
+        btn.onmouseover = () =>{
+            console.log("hello")
+        }
+
+        btn.addEventListener('click',() =>{
+            console.log("Button clicked")
+        })
+    </script>
+</body>
+</html>

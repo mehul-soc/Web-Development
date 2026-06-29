@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="main">Heading 1</h1>
+    <p id="subhead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, modi?</p>
+    <ul>
+        <li>One </li>
+        <li>Two </li>
+        <li>Three</li>
+        <li>Four</li>
+    </ul>
+    <button>Contact Us</button>
+    <a href=""></a>
+
+
+    <script>
+        const subhead = document.getElementById('subhead')
+        subhead.style.backgroundColor = 'aqua'
+
+        const uls = document.querySelectorAll('ul')
+        uls.forEach(element => {
+            element.style.listStyle = 'none';
+            element.style.backgroundColor = 'beige';
+            
+        });
+
+
+        const btn = document.querySelector('button')
+        
+
+        
+    </script>
+</body>
+
+</html>
